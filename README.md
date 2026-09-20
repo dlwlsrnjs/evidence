@@ -76,7 +76,7 @@ bash run_requested.sh smoke llava
 
 Qwen2.5는 `RESULTS_DIR=results_q25 bash run_requested.sh smoke q25`입니다. 최초 모델 다운로드/컴파일에 시간이 걸릴 수 있습니다. `smoke`는 작은 실행 검증이며 논문에 보고할 결과가 아닙니다.
 
-GPU가 꽉 차면 HF CPU offload로 **추론만** 실행할 수 있습니다. 큰 host RAM이 필요하고 훨씬 느립니다. quantization은 적용하지 않습니다.
+GPU가 꽉 차면 HF CPU offload로 **추론만** 실행할 수 있습니다. 큰 host RAM이 필요하고 훨씬 느립니다. 이 프로젝트의 offload smoke에서도 질문당 시간이 크게 늘었으므로, 25시간 내 전체 실험 계획에는 여유 있는 GPU를 사용하세요. quantization은 적용하지 않습니다.
 
 ```bash
 ENGINE=hf CPU_OFFLOAD=1 RESULTS_DIR=results_offload \
