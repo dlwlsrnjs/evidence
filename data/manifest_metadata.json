@@ -1,0 +1,20 @@
+{
+  "queries": {
+    "rows": 4006,
+    "decoded_sha256": "56e72dc782ddd6895821a2ee5a19b920174497024d86c9b92d8d037b0b63fdc9",
+    "source": "Submitted project release/data/queries.jsonl; only image, object, query, label, split retained"
+  },
+  "pope_subset": {
+    "rows": 756,
+    "images": 42,
+    "decoded_sha256": "db30320916b02be123f8fabb7060e8a9246854184ef248c9f9332bad19918b1b",
+    "selection": "First 42 shared image filenames by SHA256(3027-reviewer:<filename>), excluding historical rand/pop image filenames, fixed before new inference",
+    "source": "Li et al. (EMNLP 2023), official POPE COCO random/popular/adversarial query files, as present in the submitted project",
+    "strata": {
+      "random": 252,
+      "popular": 252,
+      "adversarial": 252
+    }
+  },
+  "note": "No photographic files or model weights included. Filename disjointness cannot exclude renamed duplicates or pretraining exposure."
+}

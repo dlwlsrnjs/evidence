@@ -1,0 +1,10 @@
+# Versions present in the original experiment environment. Install CUDA-compatible torch first.
+numpy==2.2.6
+pillow==12.3.0
+transformers==5.5.0
+peft==0.19.1
+accelerate==1.14.0
+huggingface_hub==1.24.0
+safetensors==0.8.0
+# Needed for original-loader evaluation and training. HF evaluation can omit this package.
+unsloth==2026.7.4

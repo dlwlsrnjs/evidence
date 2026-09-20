@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+manifests/
+results*/
+adapters/
+images/
+pope_images/
+.cache/
+*.safetensors
+*.bin
+*.tar
+*.tar.gz
+*.log
